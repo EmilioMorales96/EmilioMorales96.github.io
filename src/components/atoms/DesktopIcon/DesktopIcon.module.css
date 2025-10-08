@@ -1,0 +1,61 @@
+/* DesktopIcon.module.css */
+
+/**
+ * Desktop Icon Component Styles
+ * Authentic Windows XP desktop icon styling
+ */
+
+.desktopIcon {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px 12px 20px 12px;
+  cursor: pointer;
+  user-select: none;
+  padding: 6px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.desktopIcon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.desktopIcon.selected {
+  background: rgba(49, 106, 197, 0.3);
+  border: 1px dotted rgba(49, 106, 197, 0.8);
+  border-radius: 3px;
+}
+
+/* Icon image */
+.iconImage {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  margin-bottom: 6px;
+}
+
+/* Icon text label */
+.iconText {
+  color: white;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.9), 
+    -1px -1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.2;
+  font-family: 'Tahoma', sans-serif;
+  font-weight: normal;
+  max-width: 90px;
+  word-wrap: break-word;
+}
+
+/* Selected state text styling */
+.desktopIcon.selected .iconText {
+  background: rgba(49, 106, 197, 0.8);
+  color: white;
+  padding: 1px 3px;
+  border-radius: 1px;
+}

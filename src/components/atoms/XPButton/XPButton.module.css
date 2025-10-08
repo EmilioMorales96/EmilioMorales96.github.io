@@ -1,0 +1,275 @@
+/* XPButton.module.css */
+
+/**
+ * Windows XP Button Component Styles
+ * Authentic XP button styling with proper states and gradients
+ */
+
+/* Base button styles */
+.button {
+  background: linear-gradient(to bottom, #ece9d8, #d6d2c2);
+  border: 1px outset #9297a4;
+  color: #000;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  padding: 4px 8px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.1s ease;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Hover state */
+.button:hover {
+  background: linear-gradient(to bottom, #f2efdd, #ddd9c9);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Active/pressed state */
+.button:active {
+  background: linear-gradient(to bottom, #d6d2c2, #c9c5b5);
+  border: 1px inset #9297a4;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state */
+.button:focus {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+/* Disabled state */
+.button:disabled {
+  background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
+  color: #808080;
+  cursor: not-allowed;
+  border-color: #a0a0a0;
+  box-shadow: none;
+}
+
+/* Button variants */
+.primary {
+  background: linear-gradient(to bottom, #316ac5, #1e4176);
+  color: white;
+  border-color: #1e4176;
+  font-weight: bold;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.primary:hover {
+  background: linear-gradient(to bottom, #3d75d1, #255087);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.primary:active {
+  background: linear-gradient(to bottom, #1e4176, #0f2238);
+  border: 1px inset #0f2238;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.danger {
+  background: linear-gradient(to bottom, #dc3545, #a71e2a);
+  color: white;
+  border-color: #a71e2a;
+  font-weight: bold;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.danger:hover {
+  background: linear-gradient(to bottom, #e84857, #b8252f);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.danger:active {
+  background: linear-gradient(to bottom, #a71e2a, #7d1621);
+  border: 1px inset #7d1621;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Size variants */
+.small {
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+.large {
+  font-size: 12px;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+/* Icon button variant */
+.iconButton {
+  padding: 3px;
+  min-width: 20px;
+  min-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Window control buttons */
+.windowControl {
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  margin: 0;
+  border: 1px outset #9297a4;
+  background: linear-gradient(to bottom, #ece9d8, #d6d2c2);
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.windowControl:hover {
+  background: linear-gradient(to bottom, #f2efdd, #ddd9c9);
+}
+
+.windowControl:active {
+  background: linear-gradient(to bottom, #d6d2c2, #c9c5b5);
+  border: 1px inset #9297a4;
+}
+
+/* Special styling for close button */
+.closeButton {
+  background: linear-gradient(to bottom, #ff6b6b, #dc3545);
+  color: white;
+}
+
+.closeButton:hover {
+  background: linear-gradient(to bottom, #ff7979, #e55353);
+}
+
+.closeButton:active {
+  background: linear-gradient(to bottom, #dc3545, #c82333);
+  border: 1px inset #c82333;
+}
+
+/* Button with icon and text */
+.withIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+/* Toolbar button variant */
+.toolbarButton {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 3px 6px;
+  margin: 1px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.toolbarButton:hover {
+  background: linear-gradient(to bottom, #ece9d8, #d6d2c2);
+  border: 1px outset #9297a4;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.toolbarButton:active {
+  background: linear-gradient(to bottom, #d6d2c2, #c9c5b5);
+  border: 1px inset #9297a4;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Start menu button variant */
+.startButton {
+  background: linear-gradient(to right, #245ddb, #7db46c, #ffd320);
+  border: 2px outset #316ac5;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 4px 20px 4px 8px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 0 15px 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.startButton:hover {
+  background: linear-gradient(to right, #2968e6, #88bf77, #ffe033);
+  border-color: #3d75d1;
+}
+
+.startButton:active {
+  background: linear-gradient(to right, #1e4176, #6da05c, #e6bf1d);
+  border: 2px inset #316ac5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Pressed state for toggle buttons */
+.pressed {
+  background: linear-gradient(to bottom, #c9c5b5, #d6d2c2);
+  border: 1px inset #9297a4;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pressed:hover {
+  background: linear-gradient(to bottom, #cec9b9, #ddd9c9);
+}
+
+/* Button group styles */
+.buttonGroup {
+  display: inline-flex;
+  border: 1px solid #9297a4;
+}
+
+.buttonGroup .button {
+  border: none;
+  border-right: 1px solid #9297a4;
+  margin: 0;
+  border-radius: 0;
+}
+
+.buttonGroup .button:last-child {
+  border-right: none;
+}
+
+.buttonGroup .button:hover {
+  position: relative;
+  z-index: 1;
+}
+
+/* Loading state */
+.loading {
+  position: relative;
+  color: transparent;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
+  border: 2px solid #999;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

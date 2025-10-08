@@ -1,0 +1,137 @@
+/* StartMenu.module.css */
+
+.startMenu {
+  position: fixed;
+  left: 8px;
+  bottom: 42px;
+  width: 400px;
+  height: 480px;
+  background: linear-gradient(to bottom, #245edb 0%, #1941a5 60%, #0d2a5c 100%);
+  border: 2px solid #4a9eff;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(90deg, #4a9eff 0%, #245edb 100%);
+  border-bottom: 1px solid #1941a5;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.avatarText {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.userSubtitle {
+  color: #bfdbfe;
+  font-size: 0.875rem;
+}
+
+.menuItems {
+  flex: 1;
+  background: white;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 28px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: calc(100% / 4);
+}
+
+.menuItem:hover {
+  background-color: #dbeafe;
+}
+
+.menuItem:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  font-size: 2.25rem;
+}
+
+.itemContent {
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.itemDescription {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.footer {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background: linear-gradient(to bottom, #ece9d8 0%, #d6d2c2 100%);
+  border-top: 1px solid #c0c0c0;
+}
+
+.footerButton {
+  font-size: 0.75rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footerButton:hover {
+  color: #000000;
+}

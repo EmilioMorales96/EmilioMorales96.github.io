@@ -1,0 +1,1 @@
+export { default as XPButton } from './XPButton';
